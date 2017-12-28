@@ -7,11 +7,16 @@ document.querySelector('#input-text').addEventListener('keypress', function (e) 
 		console.log("the enter key has been keyed!!");
 
 		var inputText = document.getElementById('input-text');
-		var userText = inputText.value;
-		
-		var listHolder = document.getElementById('list');
+		addList(inputText.value);
+		inputText.value = "";
+		inputText.focus();
+	}
+})
+
+function addList(userText) {
+	var listHolder = document.getElementById('list');
 		var listItem = document.createElement("li");
 		listItem.innerHTML = userText;
 		listHolder.appendChild(listItem);
-	}
-})
+
+}
