@@ -1,0 +1,21 @@
+/*font-family: 'Gloria Hallelujah', cursive;
+font-family: 'Ubuntu', sans-serif;*/
+body{
+	padding: 10px 30px;
+	background-color: #ADD8E6;
+	text-align: center;
+}
+#header{
+	padding-top: 30px;
+	/*color: #eee;*/
+	color: #FFA500;
+	font-size: 1.7em;
+	font-family: 'Ubuntu', sans-serif;
+}
+#input-text {
+	width: 88%;
+	text-align: center;
+}
+#list{
+	padding-top: 30px;
+}
