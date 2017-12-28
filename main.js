@@ -6,8 +6,12 @@ document.querySelector('#input-text').addEventListener('keypress', function (e) 
 		// let the games beggin
 		console.log("the enter key has been keyed!!");
 
-		var userText = document.getElementById('input-text');
-		alert(userText.value)
-
+		var inputText = document.getElementById('input-text');
+		var userText = inputText.value;
+		
+		var listHolder = document.getElementById('list');
+		var listItem = document.createElement("li");
+		listItem.innerHTML = userText;
+		listHolder.appendChild(listItem);
 	}
 })
